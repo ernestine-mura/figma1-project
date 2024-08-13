@@ -231,18 +231,18 @@
                      </div>
                   </div>
                   <div class="boutons">
-                     <div id="precedent"  class="position-absolute top-50 start-0">
+                     <div id="precedent" onclick="changeSlide(-1)" class="precedent position-absolute top-50 start-0">
                         <button type="button"><i class="bi bi-chevron-left"></i></button>
                      </div>
-                     <div id="suivant" class="position-absolute top-50 end-0">
+                     <div id="suivant" onclick="changeSlide(1)" class="suivant position-absolute top-50 end-0">
                         <button type="button"><i class="bi bi-chevron-right"></i></button>
                      </div>
                   </div>
                </div>
                <div class="puces d-flex">
-                  <div class="left puce" data-index="0"></div>
-                  <div class="middle puce active" data-index="1"></div>
-                  <div class="rigth puce" data-index="2"></div>
+                  <div class="left puce"></div>
+                  <div class="middle puce active"></div>
+                  <div class="rigth puce"></div>
                </div>
             </div>
          </div>
@@ -534,160 +534,480 @@
          <div class="container position-relative">
             <div class="body10">
                <h2> OURT CLIENTELE LIST</h2>
-               <div class="d-flex blocs10 blocsd">
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
-                     <p class="texte10">
-                        Implemented a .NET based
-                        advanced barcode
-                        scanning and pallet tracking
-                        application. The
-                        solution helped the client to cut
-                        down operational
-                        slack by more than 40%.
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
-                     </div>
-                     <p class="texte10">
-                        Assisted a sports retailer enter
-                        the ecommerce space
-                        and currently supporting them with
-                        their digital
-                        marketing strategy to expand
-                        market share across the
-                        globe
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
-                     </div>
-                     <p class="texte10">
-                        Recruitment and Staffing
-                        solution services
-                        provided to a dynamic and fast
-                        expanding IT
-                        products and services organization
-                        based in India.
+               <div class="position-relative blocs-content">
+                  <div class="d-flex blocs10 blocsd">
+                     <div class="blocsd1 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
 
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
-                     <p class="texte10">
-                        Supported a B2B organization in the
-                        food sector
-                        with the initial design of
-                        their website.
-                     </p>
-                  </div>
-
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Service"></div>
-                     <p class="texte10">
-                        Implemented a .NET based
-                        advanced barcode
-                        scanning and pallet tracking
-                        application. The
-                        solution helped the client to cut
-                        down operational
-                        slack by more than 40%.
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Non-service">
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
                      </div>
-                     <p class="texte10">
-                        Assisted a sports retailer enter
-                        the ecommerce space
-                        and currently supporting them with
-                        their digital
-                        marketing strategy to expand
-                        market share across the
-                        globe
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service">
-                     </div>
-                     <p class="texte10">
-                        Recruitment and Staffing
-                        solution services
-                        provided to a dynamic and fast
-                        expanding IT
-                        products and services organization
-                        based in India.
 
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service"></div>
-                     <p class="texte10">
-                        Supported a B2B organization in the
-                        food sector
-                        with the initial design of
-                        their website.
-                     </p>
-                  </div>
+                     <div class="blocsd2 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
 
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
-                     <p class="texte10">
-                        Implemented a .NET based
-                        advanced barcode
-                        scanning and pallet tracking
-                        application. The
-                        solution helped the client to cut
-                        down operational
-                        slack by more than 40%.
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
                      </div>
-                     <p class="texte10">
-                        Assisted a sports retailer enter
-                        the ecommerce space
-                        and currently supporting them with
-                        their digital
-                        marketing strategy to expand
-                        market share across the
-                        globe
-                     </p>
-                  </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
-                     </div>
-                     <p class="texte10">
-                        Recruitment and Staffing
-                        solution services
-                        provided to a dynamic and fast
-                        expanding IT
-                        products and services organization
-                        based in India.
 
-                     </p>
+                     <div class="blocsd3 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
+
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="blocsd4 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
+
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
+                     </div>
+
+
+                     <div class="blocsd5 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
+
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
+                     </div>
+
+
+                     <div class="blocsd6 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
+
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
+                     </div>
+
+                      <div class="blocsd7 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
+
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
+                     </div>
+
+                    <div class="blocsd8 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
+
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
+                     </div> 
+
+                     <div class="blocsd9 sblocsd d-flex">
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/sports.png" class="img-fluid" alt="Service"></div>
+                           <p class="texte10">
+                              Implemented a .NET based
+                              advanced barcode
+                              scanning and pallet tracking
+                              application. The
+                              solution helped the client to cut
+                              down operational
+                              slack by more than 40%.
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/trellis.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Assisted a sports retailer enter
+                              the ecommerce space
+                              and currently supporting them with
+                              their digital
+                              marketing strategy to expand
+                              market share across the
+                              globe
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Recruitment and Staffing
+                              solution services
+                              provided to a dynamic and fast
+                              expanding IT
+                              products and services organization
+                              based in India.
+
+                           </p>
+                        </div>
+                        <div class="bloc10 blocd">
+                           <div class="image10"><img src="imgf1/smartpoint.png" class="img-fluid" alt="Non-service">
+                           </div>
+                           <p class="texte10">
+                              Supported a B2B organization in the
+                              food sector
+                              with the initial design of
+                              their website.
+                           </p>
+                        </div>
+                     </div>
                   </div>
-                  <div class="bloc10 blocd">
-                     <div class="image10"><img src="imgf1/wings.png" class="img-fluid" alt="Non-service"></div>
-                     <p class="texte10">
-                        Supported a B2B organization in the
-                        food sector
-                        with the initial design of
-                        their website.
-                     </p>
+                  <div class="boutons">
+                     <div id="precedentd" onclick="changeSlided(-1)" class="position-absolute top-50 start-0">
+                        <button type="button"><i class="bi bi-chevron-left"></i></button>
+                     </div>
+                     <div id="suivantd" onclick="changeSlided(1)" class="position-absolute top-50 end-0">
+                        <button type="button"><i class="bi bi-chevron-right"></i></button>
+                     </div>
                   </div>
                </div>
-               <div class="boutons">
-                  <div id="precedent" onclick="changeSlided(-1)" class="position-absolute top-50 start-0">
-                     <button type="button"><i class="bi bi-chevron-left"></i></button>
-                  </div>
-                  <div id="suivant" onclick="changeSlided(1)" class="position-absolute top-50 end-0">
-                     <button><i class="bi bi-chevron-right"></i></button>
-                  </div>
+               <div class="pucesd d-flex">
+                  <div class="puced"></div>
+                  <div class="puced"></div>
+                  <div class="puced"></div>
+                  <div class="puced active"></div>
+                  <div class="puced"></div>
+                  <div class="puced"></div>
+                  <div class="puced"></div>
                </div>
-               <div class="puces"></div>
             </div>
          </div>
       </div>

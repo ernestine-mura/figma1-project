@@ -16,9 +16,13 @@ function goTop() {
 const blocs = document.querySelector(".blocs");
 const ssblocs = document.querySelectorAll(".sblocs");
 const blocSize = document.querySelectorAll(".sblocs").length;
-const blocWidth = document.querySelector(".sblocs").offsetWidth;
+const bloc = document.querySelector(".sblocs");
+const blocWidth = bloc.getBoundingClientRect().width;
 const prevbtn = document.getElementById("precedent");
 const svtbtn = document.getElementById("suivant");
+const bpuces = document.querySelector(".puces");
+const puces = document.querySelectorAll(".puce");
+const pucesSize = document.querySelectorAll(".puce").length;
 
 let indice = 0;
 
@@ -27,58 +31,82 @@ prevbtn.addEventListener("click", () => {
   if (indice < 0) {
     indice = blocSize - 1;
   }
-  updateBloc();
+  changeSlide();
 });
 svtbtn.addEventListener("click", () => {
   indice++;
   if (indice > blocSize - 1) {
     indice = 0;
   }
-  updateBloc();
+  changeSlide();
+});
+puces.forEach((puce, i) => {
+  puce.addEventListener("click", () => {
+    indice = i;
+    changeSlide();
+  });
 });
 
-function updateBloc() {
-  const translateX = indice * blocWidth;
+function changeSlide() {
+  puces.forEach((puce, i) => {
+    puce.classList.remove("active");
+  });
+  puces[indice].classList.add("active");
+  const translateX = -indice * blocWidth;
   ssblocs.forEach((sblocs) => {
     sblocs.style.transform = `translateX(${translateX}px)`;
-   
   });
-   const currentBloc = ssblocs[indice];
-    currentBloc.style.display = `flex`;
-  blocdisplay = blocs[indice];
 }
-updateBloc();
-
-// let indice = 0;
-// function changeSlide(sens) {
-
-//   const blocs = document.querySelector(".blocs");
-//   const bloc = document.querySelectorAll(".sblocs");
-//   const blocSize = document.querySelectorAll(".sblocs").length;
-//   const blocWidth = document.querySelector(".sblocs").offsetWidth;
-
-//   indice = indice + sens;
-//    if (indice >  bloc.length - 1) indice = 0;
-//    if (indice < 0) indice = bloc.length - 1;
-
-//   blocs.style.transform = `translateX(${indice * blocWidth}px)`;
-
-// }
+changeSlide();
 
 //second slider
+
+const blocsd = document.querySelector(".blocsd");
+const ssblocsd = document.querySelectorAll(".sblocsd");
+const blocsdSize = ssblocsd.length;
+const blocd = document.querySelector(".sblocsd");
+const blocdWidth = blocd.getBoundingClientRect().width;
+const prevbtnd = document.getElementById("precedentd");
+const svtbtnd = document.getElementById("suivantd");
+const bpucesd = document.querySelector(".pucesd");
+const pucesd = document.querySelectorAll(".puced");
+
 let index = 0;
-function changeSlided(sens) {
-  const blocsd = document.querySelector(".blocsd");
-  const blocd = document.querySelector(".blocd");
-  const blocdSize = document.querySelectorAll(".blocd").length;
-  const blocdWidth = document.querySelector(".blocd").offsetWidth;
+prevbtnd.addEventListener("click", () => {
+  index--;
+  if(index < 0){
+    index = blocsdSize - 1;
+  }
+  changeSlided();
+});
+svtbtnd.addEventListener("click", () => {
+  index++;
+  if(index > blocsdSize - 1){
+    index = 0;
+  }
+  changeSlided();
+});
+pucesd.forEach((puced, i) => {
+  puced.addEventListener("click", () => {
+    index = i;
+    changeSlided();
+  });
+});
+function changeSlided(){
+  pucesd.forEach((puced) => {
+    puced.classList.remove("active");
+    
+  });
+  pucesd[index].classList.add("active");
 
-  index = index + sens;
-  if (index < 0) index = blocdSize - 4;
+  const translateX = -index * blocdWidth;
 
-  if (index > blocdSize - 4) index = 0;
-  blocsd.style.transform = `translateX(${4 * (index * blocdWidth)}px)`;
+  ssblocsd.forEach((sblocsd) => {
+    sblocsd.style.transform = `translateX(${translateX}px)`;
+  });
+
 }
+changeSlided();
 
 //form
 const form = document.getElementById("contact");

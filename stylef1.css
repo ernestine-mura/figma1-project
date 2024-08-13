@@ -2,19 +2,19 @@
   box-sizing: border-box;
   font-family: "Dhurjati", sans-serif;
 }
-:root{
-  --gris:#676767;
+:root {
+  --gris: #676767;
   --gris-sombre: #19384c;
   --bleu-vert: #00feef;
- --red:#f90000;
- --s-red:#fa0101;
- --gris-noir:#4b566d;
- --bleu:#01326b;
- --pink:#ff598f;
- --bleu-ciel:#00c0fd;
---bleu-marrin:#304e69;
---gris-clair:#c7c7c7;
---blanc-sombre:#d9d9d9;
+  --red: #f90000;
+  --s-red: #fa0101;
+  --gris-noir: #4b566d;
+  --bleu: #01326b;
+  --pink: #ff598f;
+  --bleu-ciel: #00c0fd;
+  --bleu-marrin: #304e69;
+  --gris-clair: #c7c7c7;
+  --blanc-sombre: #d9d9d9;
 }
 tbody,
 td,
@@ -108,7 +108,6 @@ img {
 }
 .body1 button:hover {
   color: #f44f4f;
- 
 }
 .body2 {
   padding-top: 25px;
@@ -144,7 +143,7 @@ img {
   padding-bottom: 25px;
   margin: auto;
 }
-.container .body3 .blocs-content{
+.container .body3 .blocs-content {
   overflow: hidden;
 }
 .body3 h2 {
@@ -153,14 +152,16 @@ img {
   text-align: center;
 }
 .container .body3 .blocs {
-  width: 100%;
+  /* width: 100%; */
+  width: fit-content;
   align-items: center;
-  overflow: auto;
 }
-.container .body3 .blocs .sblocs{
+.container .body3 .blocs .sblocs {
   width: 100%;
   justify-content: center;
   align-items: center;
+  transition-duration: 1s;
+
 }
 .container .body3 .blocs .bloc {
   min-width: 399px;
@@ -168,7 +169,6 @@ img {
   box-shadow: 0px 5px 5px 5px #ccc;
   margin-left: 20px;
   margin-right: 20px;
-
 }
 .container .body3 .bloc .image3 {
   text-align: center;
@@ -189,6 +189,7 @@ img {
   font-size: 20px;
   text-align: center;
   color: var(--gris-noir);
+  padding: 0 60px 0 60px;
 }
 .boutons button {
   border: none;
@@ -201,27 +202,26 @@ img {
 .boutons button i {
   font-size: 50px;
   font-weight: bold;
- color: #010101;
+  color: #010101;
   font-family: "Goblin One", serif;
 }
-.body3 .puces{
+.body3 .puces {
   text-align: center;
   margin-top: 25px;
   justify-content: center;
   align-items: center;
   column-gap: 3px;
 }
-.body3 .puces div{
+.body3 .puces div {
   height: 21px;
   width: 20px;
   border-radius: 50%;
   border: 1px solid var(--blanc-sombre);
 }
-.body3 .puces div.active{
- background-color: var(--bleu);
+.body3 .puces div.active {
+  background-color: var(--bleu);
 }
-.body
-.body4 img {
+.body .body4 img {
   justify-content: center;
   align-items: center;
   max-width: auto;
@@ -578,8 +578,7 @@ ul li p {
   text-align: center;
 }
 .blocs10 {
-  width: 100%;
-  column-gap: 3%;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   margin: 35px 0;
@@ -595,6 +594,9 @@ ul li p {
 .bloc10 .image10 {
   text-align: center;
   margin: 45px 10px;
+}
+.sblocsd{
+  column-gap: 15px;
 }
 .bloc10 img {
   width: 204px;
@@ -612,6 +614,19 @@ ul li p {
   text-align: center;
   color: var(--gris-noir);
   padding: 0 15px;
+}
+.body10 .pucesd{
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+.body10 .pucesd .puced{
+  width: 25px;
+  height: 5px;
+  background-color: var(--blanc-sombre);
+}
+.body10 .pucesd .puced.active{
+  background-color: #0174FC;
 }
 .body11 {
   margin: 75px 0;
@@ -968,23 +983,24 @@ form {
   font-size: 22px;
   color: var(--gris-clair);
 }
-.container .copyrigth p a{
+.container .copyrigth p a {
   font-size: 22px;
   color: var(--gris-clair);
   text-decoration: none;
 }
-.container .copyrigth p a:hover{
+.container .copyrigth p a:hover {
   font-size: 22px;
   color: var(--bleu-vert);
 }
 .container .copyrigth {
   margin-top: 85px;
 }
-.footer .container a:hover{
+.footer .container a:hover {
   color: var(--bleu-vert);
   border-bottom: none;
 }
-.footer .container a i:hover{
+.footer .container a i:hover {
   color: var(--bleu-vert);
   border-bottom: none;
 }
+
