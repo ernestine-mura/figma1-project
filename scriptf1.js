@@ -12,7 +12,6 @@ function goTop() {
 }
 
 //First slider
-
 const blocs = document.querySelector(".blocs");
 const ssblocs = document.querySelectorAll(".sblocs");
 const blocSize = document.querySelectorAll(".sblocs").length;
