@@ -347,12 +347,12 @@ margin-top: 25px;
   left: 390px;
 }
 .fleche {
-  right: 410px;
+  right: 510px;
   top: 105px;
 }
 .flecheopp {
   top: 410px;
-  left: 360px;
+  left: 460px;
 }
 .blocrouge1 {
   top: 105px;
@@ -584,7 +584,7 @@ margin-left: auto;
   height: 219px;
   border-radius: 50%;
   top: 180px;
-  right: 100px;
+  right: 400px;
   z-index: 100;
   display: flex;
 }
@@ -641,15 +641,15 @@ margin-left: auto;
 }
 .body11 .flechesred {
   top: 150px;
-  right:0;
+  right:280px;
 }
 .body11 .p7 {
   top: 150px;
   right: 0;
 }
 .body11 .p8 {
-  top: 500px;
-  right: 0;
+  top: 488px;
+  right: 10px;
 }
 .formulaire {
   border-radius: 8px;
@@ -1143,5 +1143,14 @@ text-align: center;
     justify-content: center;
     bottom: 30px;
     right: 30px;
+  }
+}
+@media screen and (width = 1024px){
+  .body11 .texte-col3 {
+    
+    display: none;
+  }
+  .body11 .p8{
+    display: none;
   }
 }
